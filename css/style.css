@@ -52,10 +52,33 @@ hr {
 /* Layout */
 
 .container {
-	padding: 0;
-	margin: 0 auto;
+	background-color: white;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	border: 2px dashed black;
+
+}
+.main{
+	background-color: bisque;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
-	max-width: 1000px;
+	height: 100vh;
+	margin: auto;
+	padding: 10px;
+}
+.quote-card {
+ display: flex;
+ flex-direction: column;
+ padding: 20px;
+}
+.quote {
+
+}
+.author {
+
 }
 
 /* Media Queries */
