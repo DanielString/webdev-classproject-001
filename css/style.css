@@ -64,6 +64,20 @@ hr {
 	display: flex;
 	flex-direction: column;
 }
+.container::before {
+	content: "\201C";
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 60px;
+	color: ivory;
+	text-shadow: 2px 2px 3px black;
+}
+.container::after {
+	content: "\201D";
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 60px;
+	color: ivory;
+	text-shadow: 2px 2px 3px black;
+}
 .main{
 	border: 10px groove brown;
 	border-radius: 40px;
