@@ -19,7 +19,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: sans-serif;
 	text-shadow: 2px 2px 3px black;
-	letter-spacing: 0.3em;
+	letter-spacing: 0.1em;
 	font-weight: bold;
 	line-height: 1.5em;
 	margin: 0 0 1.6rem;
@@ -60,12 +60,17 @@ hr {
 	flex-direction: column;
 	width: 100%;
 }
+span {
+	display: flex;
+	flex-direction: column;
+}
 span::before {
 	content: "\201C";
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 80px;
 	color: ivory;
 	text-shadow: 2px 2px 3px black;
+	align-self: flex-start;
 }
 span::after {
 	content: "\201D";
@@ -73,8 +78,9 @@ span::after {
 	font-size: 80px;
 	color: ivory;
 	text-shadow: 2px 2px 3px black;
-	float: right;
+	align-self: flex-end;
 }
+
 .main{
 	border: 10px double rgb(44, 42, 42);
 	border-radius: 40px;
@@ -92,12 +98,12 @@ span::after {
  color: ivory;
 }
 
-.quote {
+/* .quote {
 
 }
 .author {
 
-}
+}*/
 
 /* Media Queries */
 
