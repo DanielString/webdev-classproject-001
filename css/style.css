@@ -3,6 +3,7 @@
 html {
 	padding: 0;
 	margin: 0;
+	background: linear-gradient(to bottom right, pink, purple);
 }
 
 body {
@@ -10,7 +11,9 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 1.6;
-	background-color: #f9f9f9;
+	width: 85%;
+	margin: auto;
+	padding: 70px;
 }
 
 h1,
@@ -19,11 +22,16 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Courier New", Courier, monospace;
+	font-family: sans-serif;
+	text-shadow: 2px 2px 3px black;
+	letter-spacing: 0.3em;
 	font-weight: bold;
-	line-height: 1;
-	text-transform: uppercase;
+	line-height: 1.5em;
 	margin: 0 0 1.6rem;
+}
+h1::first-letter {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 50px;
 }
 
 p {
@@ -52,16 +60,13 @@ hr {
 /* Layout */
 
 .container {
-	background-color: bisque;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
-	border: 2px dashed black;
-
 }
 .main{
-	background: linear-gradient(to bottom right, blue, gray);
-	border: 10px outset red;
+	border: 10px groove brown;
+	border-radius: 40px;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -73,6 +78,7 @@ hr {
  display: flex;
  flex-direction: column;
  padding: 20px;
+ color: ivory;
 }
 
 .quote {
