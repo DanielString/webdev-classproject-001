@@ -63,6 +63,8 @@ hr {
 span {
 	display: flex;
 	flex-direction: column;
+	text-align: center;
+	font-size: 1.5em;
 }
 span::before {
 	content: "\201C";
@@ -82,8 +84,9 @@ span::after {
 }
 
 .main{
-	border: 10px double rgb(44, 42, 42);
-	border-radius: 40px;
+	border-top: 10px double rgb(44, 42, 42);
+	border-bottom: 10px double rgb(44, 42, 42);
+	border-radius: 30px;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -100,10 +103,11 @@ span::after {
 
 /* .quote {
 
-}
-.author {
-
 }*/
+.author {
+	text-align: center;
+	font-family: cursive;
+}
 
 /* Media Queries */
 
